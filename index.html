@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>ClassFZone </title>
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+</head>
+
+<body>
+    <div class="stars"></div>
+
+
+    <header>
+        <div class="header-content">
+            <img src="gambar/logo.jpeg" alt="Logo Kelas" class="Logo">
+
+        </div>
+        <h1>ClassFZone 2025-2027</h1>
+        <p>Solid, Cerdas, dan Berprestasi</p>
+
+        <p id="jam"></p>
+    </header>
+
+    <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#pengurus">Pengurus</a>
+        <a href="#galeri">Galeri</a>
+        <a href="anggota.html" class="tombol">Anggota</a>
+        <a href="#instagram">Instagram</a>
+        <button id="darkModeBtn">★ Mode Gelap</button>
+
+    </nav>
+
+    <section id="tentang">
+        <h2>Tentang ClassFZone</h2>
+        <p>
+            website ClassFZone 2025-2027.
+            Website ini digunakan untuk berbagi informasi,
+            keseruan kelas kami dan kegiatan kelas F.
+        </p>
+    </section>
+
+    <section id="pengurus">
+        <h2>Pengurus Kelas</h2>
+        <div class="card">
+            <h3>Ketua Kelas</h3>
+            <p>Jems Sinathree Sijabat</p>
+        </div>
+
+        <div class="card">
+            <h3>Wakil Ketua</h3>
+            <p>Putri Pakpahan</p>
+        </div>
+
+        <div class="card">
+            <h3>Sekretaris</h3>
+            <p>Cheryl Munthe</p>
+        </div>
+
+        <div class="card">
+            <h3>Bendahara</h3>
+            <p>Lidya veronika Munthe</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Developer</h3>
+            <p>Evan Ray Andrian Hutabarat</p>
+
+        </div>
+    </section>
+
+    <section id="galeri">
+            <h2>Galeri Kelas</h2>
+
+        <div class="galeri">
+        <div class="foto">
+            <img src="gambar/ibuseriaty.jpeg" alt="Foto Ibu Seriaty">
+            <p>Ibu Seriaty</p>
+        </div>
+
+        <div class="foto">
+            <img src="gambar/fotobersama.jpeg" alt="Foto Peringatan Hari Guru">
+            <p>Peringatan Hari Guru</p>
+        </div>
+
+        <div class="foto">
+            <img src="gambar/together.jpeg" alt="Foto Bersama Kelas">
+            <p>Foto Bersama Kelas</p>
+        </div>
+
+        <div class="foto">
+            <img src="gambar/boys.jpeg" alt="Foto Boys">
+            <p>Boys</p>
+        </div>
+
+        <div class="foto">
+            <img src="gambar/girls.jpeg" alt="Foto Girls">
+            <p>Girls</p>
+        </div>
+
+        <div class="foto">
+            <img src="gambar/me.jpeg" alt="Foto Developer">
+            <p>Developer</p>
+        </div>
+        </div>
+     </section>
+
+     <section id="instagram">
+         <h2>Instagram Kelas</h2>
+         <p>Ikuti kegiatan dan informasi terbaru kelas kami.</p>
+
+         <a href="https://www.instagram.com/elevefzone_?igsh=dGtsdHR4eGJ6NTI3"
+         target="_blank"
+         class="instagram-btn">
+         📷 Follow Instagram EleveFZone
+         </a>
+     </section>
+
+    <footer>
+        <p>© 2025-2027 EleveFZone</p>
+    </footer>
+
+</body>
+
+<script>
+    const tombol = document.getElementById("darkModeBtn");
+
+    tombol.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            tombol.innerHTML = "☀︎ Mode Terang";
+        } else {
+            tombol.innerHTML = "★ Mode Gelap";
+        }
+    });
+
+    setInterval(() => {
+       const sekarang = new Date();
+
+       document.getElementById("jam").innerHTML =
+        sekarang.toLocaleTimeString("id-ID");
+         }, 1000);
+</script>
+
+
+</html>
+
